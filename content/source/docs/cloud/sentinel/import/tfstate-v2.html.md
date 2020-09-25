@@ -154,6 +154,10 @@ An element in the collection has the following values:
   [`resource_changes`](./tfplan-v2.html#the-resource_changes-collection)
   collection in the [`tfplan/v2`](./tfplan-v2.html) import.
 
+-> Starting with Terraform 0.13, the `provider_name` field will contain the
+fully qualified path to the provider in the Terraform Registry. Example:
+`registry.terraform.io/hashicorp/null` for the null provider.
+
 ## The `outputs` Collection
 
 The `outputs` collection is a collection of outputs from the root module of the

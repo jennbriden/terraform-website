@@ -338,6 +338,10 @@ An element contains the following fields:
 * `change` - The data describing the change that will be made to this resource.
   For more details, see [Change Representation](#change-representation).
 
+-> Starting with Terraform 0.13, the `provider_name` field will contain the
+fully qualified path to the provider in the Terraform Registry. Example:
+`registry.terraform.io/hashicorp/null` for the null provider.
+
 ## The `output_changes` Collection
 
 The `output_changes` collection is a collection of the change operations for
